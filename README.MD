@@ -43,12 +43,12 @@ python manage.py runserver
 
 The API has two endpoints:
 
-- `/api/devices` for creating a new device
-- `/api/devices/{id}` for retrieving a device by its id
+- `/devices` for creating a new device
+- `/devices/{id}` for retrieving a device by its id
 
 ## API Requests
 
-## POST `/api/devices`
+## POST `/devices`
 
 This endpoint creates a new device in the AWS DynamoDB. The request body should be in JSON format and contain the following fields:
 
@@ -62,7 +62,7 @@ Example Request
 
 ```bash
 HTTP POST
-URL: https://<api-gateway-url>/api/devices
+URL: https://<api-gateway-url>/devices
 Body (application/json):
 {
   "id": "/devices/id1",
@@ -93,7 +93,7 @@ If any exceptional situation occurs on the server side, the response will be:
 HTTP 500 Internal Server Error
 ```
 
-## GET `/api/devices/{id}`
+## GET `/devices/{id}`
 
 This endpoint retrieves a device by its id from the AWS DynamoDB.
 
@@ -101,8 +101,8 @@ Example Request
 
 ```
 HTTP GET
-URL: https://<api-gateway-url>/api/devices/{id}
-Example: GET https://api123.amazonaws.com/api/devices/id1
+URL: https://<api-gateway-url>/devices/{id}
+Example: GET https://api123.amazonaws.com/devices/id1
 ```
 
 Example Response - Success
