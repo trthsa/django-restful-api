@@ -6,7 +6,7 @@ This is a simple Restful API built with Django, AWS DynamoDB, AWS API Gateway an
 
 ## Requirements
 
-- Python
+- Python(>3.8)
 - Django
 - AWS DynamoDB
 - AWS API Gateway
@@ -94,6 +94,7 @@ HTTP 500 Internal Server Error
 ```
 
 ## GET `/api/devices/{id}`
+
 This endpoint retrieves a device by its id from the AWS DynamoDB.
 
 Example Request
