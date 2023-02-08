@@ -18,7 +18,7 @@ This is a simple Restful API built with Django, AWS DynamoDB, AWS API Gateway an
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/[username]/django-restful-api.git
+git clone https://github.com/trthsa/django-restful-api.git
 ```
 
 2. Change directory to the cloned repository:
