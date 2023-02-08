@@ -1,0 +1,13 @@
+http://127.0.0.1:8000/devices/id5/
+
+###
+POST http://127.0.0.1:8000/devices/
+Content-Type: application/json
+
+{
+  "id": "/devices/id5",
+  "deviceModel": "/models/id5",
+  "name": "Senso 5",
+  "note": "Testing a sensor 5.",
+  "serial": "A0400105"
+}
